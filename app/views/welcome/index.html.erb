@@ -2,3 +2,182 @@
 <p>
   The time is now: <%= Time.now %>
 </p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chart For Ruby</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+ <!-- Vendor CSS Files -->
+  <%= stylesheet_link_tag "vendor/aos/aos.css" %>
+  <%= stylesheet_link_tag "vendor/bootstrap/css/bootstrap.min.css" %>
+  <%= stylesheet_link_tag "vendor/bootstrap-icons/bootstrap-icons.css" %>
+  <%= stylesheet_link_tag "vendor/boxicons/css/boxicons.min.css" %>
+  <%= stylesheet_link_tag "vendor/glightbox/css/glightbox.min.css" %>
+  <%= stylesheet_link_tag "vendor/swiper/swiper-bundle.min.css" %>
+
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "css/style.css" %>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Mikes App</span></a></h1>
+        <!-- Uncomment 4 an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="">Home</a></li>
+          <li><a class="nav-link scrollto active" href="">About</a></li>
+          <li><a class="nav-link scrollto active" href="">Portfolio</a></li>
+          <li><a class="nav-link scrollto active" href="">Contact</a></li>
+
+          <li class="dropdown"><a href="#"><span>Chart Data</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><%= link_to("First Name",f_name_path) %></li>
+              <li><%= link_to("Middle Name", m_name_path) %></li>
+              <li><%= link_to("Last Name", l_name_path) %></li>
+              <li><%= link_to("Prefix", prefix_path) %></li>
+              <li><%= link_to("Address 1", address_1_path) %></li>
+              <li><%= link_to("Address 2", address_2_path) %></li>
+              <li><%= link_to("City", city_path) %></li>
+              <li><%= link_to("State", state_path) %></li>
+              <li><%= link_to("Zip", zip_path) %></li>
+              <li><%= link_to("Education", education_path) %></li>
+              <li><%= link_to("Income", income_path) %></li>
+            </ul>
+          </li>
+          <!--<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Chart</h1>
+          The time is <%= Time.now %>
+          <div>
+
+            <a href="data/first" class="btn-get-started scrollto">Click Here To Start</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+         <p>
+         <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+
+         </p>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Michael Duvenary</h3>
+            <!--<p>
+
+              Los Angeles, CA 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 3234415513<br>
+              <strong>Email:</strong> m.duvenary@gmail.com<br>
+            </p>-->
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Portfolio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Software Skills</h4>
+            <ul>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Git</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Object Oriented Programming</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Social Networks</h4>
+            <p>Coming Soon.</p>
+            <div class="social-links mt-3">
+             <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright </div>
+      <div class="credits">
+     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
